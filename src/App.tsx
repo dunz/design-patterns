@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import {Singleton} from "./Singleton";
+import example from './example.module.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
 
   console.log('ins1 === ins2', ins1 === ins2);
   console.log('ins1 === ins3', ins1 === ins3);
+  console.log(example);
 
   return (
     <div className="App">

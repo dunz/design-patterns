@@ -1,0 +1,16 @@
+/* example.module.css */
+.red {
+    color: red;
+}
+
+#blue {
+    background: blue;
+}
+
+h1 {
+    border:1px solid red;
+}
+
+.black > .orange {
+    color: orange;
+}
