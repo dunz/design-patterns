@@ -4,13 +4,12 @@ import './App.css';
 import { Singleton } from './Singleton';
 import example from './example.module.css';
 
-function App() {
+function App(): JSX.Element {
     const [count, setCount] = useState(0);
 
     const ins1 = new Singleton();
     const ins2 = new Singleton();
     const ins3 = new Singleton();
-    var asdf = 'asdf';
 
     console.log('ins1 === ins2', ins1 === ins2);
     console.log('ins1 === ins3', ins1 === ins3);
