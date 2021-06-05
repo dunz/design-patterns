@@ -1,8 +1,22 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
+import logo192 from '/logo192.png';
 import './App.css';
 import { Singleton } from './Singleton';
 import example from './example.module.css';
+
+console.log('logo', logo);
+console.log('logo', logo192);
+
+interface Int {
+    (a: number, b: number): number;
+    operator: string;
+}
+
+const func: Int = (a, b) => {
+    return a + b;
+};
+func.operator = '+';
 
 function App(): JSX.Element {
     const [count, setCount] = useState(0);
@@ -19,6 +33,7 @@ function App(): JSX.Element {
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
+                <img src={logo192} className="App-logo" alt="logo" />
                 <p>Hello Vite + React!</p>
                 <p>
                     <button onClick={() => setCount((count) => count + 1)}>count is: {count}</button>
