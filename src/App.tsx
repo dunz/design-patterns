@@ -5,8 +5,7 @@ import './App.css';
 import { Singleton } from './Singleton';
 import example from './example.module.css';
 
-console.log('logo', logo);
-console.log('logo', logo192);
+console.log(import.meta.env);
 
 interface Int {
     (a: number, b: number): number;
